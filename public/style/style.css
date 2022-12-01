@@ -1,0 +1,67 @@
+:root{
+    --bg-white: hsl(0, 0%, 100%);
+}
+
+/* Fontes do projeto */
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('/assets/fonts/static/Inter-Bold.ttf') 
+    format('truetype');
+}
+
+@font-face {
+    font-family:'Inter-Regular';
+    src: url('/assets/fonts/static/Inter-Regular.ttf') 
+    format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-VariableFont_slnt_wght'; 
+    src: url('/assets/fonts/Inter-VariableFont_slnt_wght.ttf') 
+    format('truetype');    
+}
+
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    src: url('/assets/fonts/static/Inter-ExtraBold.ttf') 
+    format('truetypes');
+}
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none; outline: none;
+}
+
+html{
+    font-family: 'Outfit', sans-serif;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+html, body{
+    width: 100%; height: 100%;
+}
+
+@font-face {
+    font-family: 
+    'Inter-Bold', 
+    'Inter-Regular', 
+    'Inter-VariableFont_slnt_wght', 
+    'Inter-ExtraBold';
+
+    src: url('/assets/fonts/static/Inter-Bold.ttf') 
+    format('truetype'),
+
+    url('/assets/fonts/static/Inter-Regular.ttf') 
+    format('truetype'),
+
+    url('/assets/fonts/Inter-VariableFont_slnt_wght.ttf') 
+    format('truetype'),
+
+    url('/assets/fonts/static/Inter-ExtraBold.ttf') 
+    format('truetypes');
+}
