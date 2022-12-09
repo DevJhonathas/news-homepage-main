@@ -1,31 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Lateef:wght@400;700;800&display=swap');
+
 :root{
     --bg-white: hsl(0, 0%, 100%);
-}
-
-/* Fontes do projeto */
-
-@font-face {
-    font-family: 'Inter-Bold';
-    src: url('/assets/fonts/static/Inter-Bold.ttf') 
-    format('truetype');
-}
-
-@font-face {
-    font-family:'Inter-Regular';
-    src: url('/assets/fonts/static/Inter-Regular.ttf') 
-    format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter-VariableFont_slnt_wght'; 
-    src: url('/assets/fonts/Inter-VariableFont_slnt_wght.ttf') 
-    format('truetype');    
-}
-
-@font-face {
-    font-family: 'Inter-ExtraBold';
-    src: url('/assets/fonts/static/Inter-ExtraBold.ttf') 
-    format('truetypes');
+    --color-header-link: hsl(270, 2%, 37%);
+    --color-header-link-visted-active: hsl(0, 0%, 28%);
+    --color-header-link-hover: hsl(0, 1%, 55%);
 }
 
 *{
@@ -36,7 +15,7 @@
 }
 
 html{
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Inter', serif;
     font-size: 62.5%;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -46,22 +25,42 @@ html, body{
     width: 100%; height: 100%;
 }
 
-@font-face {
-    font-family: 
-    'Inter-Bold', 
-    'Inter-Regular', 
-    'Inter-VariableFont_slnt_wght', 
-    'Inter-ExtraBold';
+.container-header > .navbar{
+    display: flex;
+    flex-wrap: nowrap; gap: 20px;
+    justify-content: space-around;
+    margin-top: 40px;
+}
 
-    src: url('/assets/fonts/static/Inter-Bold.ttf') 
-    format('truetype'),
+.navbar > .Lista{
+    display: flex;
+    flex-direction: row;
+    gap: 30px; list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
 
-    url('/assets/fonts/static/Inter-Regular.ttf') 
-    format('truetype'),
+/* Ajeitando cores dos links da lista*/
+.header-lista{
+    text-decoration: none;
+    color: var(--color-header);
+    font-size: 1.8em;
+}
 
-    url('/assets/fonts/Inter-VariableFont_slnt_wght.ttf') 
-    format('truetype'),
+.header-lista:visited {
+    color: var(--color-header-link-visted-active);
+}
 
-    url('/assets/fonts/static/Inter-ExtraBold.ttf') 
-    format('truetypes');
+.header-lista:hover {
+    color: var(--color-header-link-hover);
+}
+
+a:active {
+    color: var(--color-header-link-visted-active);
+}
+
+.title-h1-Header{
+    font-family: 'inter', sans-serif;
+    font-size: 6.5em;
+    font-weight: 700;
 }
