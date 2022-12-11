@@ -40,7 +40,15 @@ html, body{
     justify-content: flex-end;
 }
 
-/* Ajeitando cores dos links da lista*/
+/* Fonte W */
+.title-h1-Header{
+    font-family: 'inter', sans-serif;
+    font-size: 6.5em;
+    font-weight: 700;
+}
+
+
+/* Ajeitando cores dos links da lista do Header*/
 .header-lista{
     text-decoration: none;
     color: var(--color-header);
@@ -59,8 +67,7 @@ a:active {
     color: var(--color-header-link-visted-active);
 }
 
-.title-h1-Header{
-    font-family: 'inter', sans-serif;
-    font-size: 6.5em;
-    font-weight: 700;
+/* Ajeitando Section Com imagem Cubos, Tittle and Paragraph, aside. */
+.title-Paragraph-Main{
+    display: grid;
 }
